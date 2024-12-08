@@ -17,6 +17,9 @@ fun main() {
 5 is printed (2 + 3)
 
 
+## Scope functions
+
+
 # let
 
 Easy to understand, please see this code:
@@ -39,7 +42,7 @@ fun toUpperCase(str: String): String {
 ```
 
 
-# run
+## run
 
 Similar to let, see the next code:
 
@@ -67,7 +70,7 @@ Details:
 - You can use 'length' that is equals to this.lenght().
 
 
-# with
+## with
 
 More close to run, with a different syntax, see:
 
@@ -91,7 +94,7 @@ fun main() {
 ```
 
 
-# apply
+## apply
 
 Please see the following code:
 
