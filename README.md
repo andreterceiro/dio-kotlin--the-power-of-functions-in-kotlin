@@ -65,3 +65,24 @@ fun toUpperCase(str: String): String {
 Details:
 - In let you have to use 'it', but in case of run you have to use 'this';
 - You can use 'length' that is equals to this.lenght().
+
+
+# with
+
+More close to run, with a different syntax, see:
+
+```kotlin
+package tests
+
+class Numbers(var number1: Int, var number2: Int)
+
+fun main() {
+    val numbers:Numbers = Numbers(1, 2)
+
+    val sum:Int = with(numbers) {
+        number1 + number2
+    }
+
+    print(sum)
+}
+```
