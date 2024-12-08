@@ -15,3 +15,24 @@ fun main() {
 ```
 
 5 is printed (2 + 3)
+
+
+# let
+
+Easy to understand, please see this code:
+
+```kotlin
+package tests
+
+fun main() {
+    var ret:String = "test".let {
+        toUpperCase(it) // It receives the ret value as calls a function
+    }
+
+    print(ret)
+}
+
+fun toUpperCase(str: String): String {
+    return str.uppercase();
+}
+```
