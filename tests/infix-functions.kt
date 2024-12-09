@@ -14,4 +14,25 @@ fun main() {
     print(" -- ")
 
     print(pair::class.simpleName)
+    print(" -- ")
+
+    val julio = Person("Julio")
+    print(julio.name)
+    print(" -- ")
+
+    julio addSon "André"
+    julio addSon "Thais"
+    print(julio.sons)
+}
+
+class Person(var name: String) {
+    val sons = mutableListOf<String>()
+
+    fun constructor() {
+        this.name = name
+    }
+
+    infix fun addSon(name: String) {
+        this.sons.add(name)
+    }
 }
