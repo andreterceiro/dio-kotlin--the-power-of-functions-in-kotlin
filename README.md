@@ -339,3 +339,11 @@ suspend fun doWorld() = coroutineScope {
 Please also see [this link](https://pl.kotl.in/14qvU5dQI) in Kotlin Playgroud.
 
 As you can see in the example, the delay is associated to all output. Isn't related to an output, a delay and a subsequent output.
+
+
+# Support materials
+
+Please see this 2 sections in the [repository of the course](https://github.com/digitalinnovationone/aprenda-kotlin-com-exemplos):
+
+- 5_funcoes_de_escopo
+- 6_funcoes_avancadas
