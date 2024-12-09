@@ -229,3 +229,28 @@ fun main() {
     print("Brasil"[0..2])
 }
 ```
+
+
+## High order functions
+
+Here we will study a function that returns another function or functions that receives another function as a parameter.
+
+Let's see first a function that receives another function as a parameter:
+
+```kotlin
+package tests
+
+fun main() {
+    print(calculate(4, 5, ::sum))
+    // prints 9
+}
+
+// Pay atention to the ":" sign after 'functionWhoSums'
+fun calculate(a: Int, b:Int, functionWhoSums: (Int, Int) -> Int): Int {
+    return functionWhoSums(a, b)
+}
+
+fun sum(x: Int, y: Int): Int {
+    return x + y
+}
+```
