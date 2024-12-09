@@ -311,3 +311,31 @@ fun main() {
     print("Hi".nullSafeToString())
 }
 ```
+
+
+## Suspend functions
+
+Is associated to asynchronous tasks (because of this uses coroutines). Please see this example:
+
+```kotlin
+package tests
+
+import kotlinx.coroutines.*
+
+fun main() = runBlocking {
+    doWorld()
+}
+
+suspend fun doWorld() = coroutineScope {
+    launch {
+        delay(5000L)
+        print("world")
+    }
+
+    print("Hello ")
+}
+```
+
+Please also see [this link](https://pl.kotl.in/14qvU5dQI) in Kotlin Playgroud.
+
+As you can see in the example, the delay is associated to all output. Isn't related to an output, a delay and a subsequent output.
