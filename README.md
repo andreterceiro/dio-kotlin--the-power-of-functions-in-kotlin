@@ -210,3 +210,22 @@ class Person(var name: String) {
     }
 }
 ```
+
+
+## Operator functions
+
+With this functions we can replace the behariour of the operators or add some functionality. But we have to memorize the method names to use, see:
+
+```kotlin
+package tests
+
+fun main() {
+    operator fun Int.times(str: String) = str.repeat(this)
+    print(3 * "hi ")
+    // prints "hi hi hi "
+    print(" -- ")
+
+    operator fun String.get(range: IntRange) = substring(range)
+    print("Brasil"[0..2])
+}
+```
