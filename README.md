@@ -349,6 +349,24 @@ You can construct lambda functions in several ways, see:
 
 In the test directories I will test lambda functions, but only some variations, ok?
 
+Two simple tests: 
+
+```kotlin
+package tests
+
+fun main() {
+    val toUpperCase1: (String) -> String = {str: String -> str.uppercase()} 
+
+    print(toUpperCase1("test 1"))
+    print(" -- ")
+
+    val toUpperCase2: (String) -> String = {it.uppercase()}
+    print(toUpperCase2("test 2"))
+}
+```
+
+Please pay attention to the details, like the double colon. You have to obbey the syntax.
+
 
 # Support materials
 
