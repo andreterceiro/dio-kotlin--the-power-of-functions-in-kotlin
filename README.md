@@ -341,6 +341,13 @@ Please also see [this link](https://pl.kotl.in/14qvU5dQI) in Kotlin Playgroud.
 As you can see in the example, the delay is associated to all output. Isn't related to an output, a delay and a subsequent output.
 
 
+## Lambda function
+
+You can construct lambda functions in several ways, see:
+
+![lambda function variations](images/lambda-variations.png)
+
+
 # Support materials
 
 Please see this 2 sections in the [repository of the course](https://github.com/digitalinnovationone/aprenda-kotlin-com-exemplos):
