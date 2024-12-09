@@ -166,3 +166,19 @@ fun main() {
     print(2 times("HI! ")) // Also works without a dot!    
 }
 ```
+
+An internal infix function `to`:
+
+```kotlin
+package tests
+
+infix fun Int.times(str: String) = str.repeat(this)
+
+fun main() {
+    val pair = "Júlio" to "Enzo"
+    print(pair)
+    print(" -- ")
+
+    print(pair::class.simpleName)
+}
+```
