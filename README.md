@@ -147,3 +147,21 @@ fun main() {
     println(person)
 }
 ```
+
+
+# "special", different functions
+
+
+## infix functions
+
+Please see this simple example. In this example we extend the behaviour of Int with a times method:
+
+```kotlin
+package tests
+
+infix fun Int.times(str: String) = str.repeat(this)
+
+fun main() {
+    print(2.times("Bye "))
+}
+```
