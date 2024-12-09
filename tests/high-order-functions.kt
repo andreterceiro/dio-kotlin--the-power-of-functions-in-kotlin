@@ -3,6 +3,10 @@ package tests
 fun main() {
     print(calculate(4, 5, ::sum))
     // prints 9
+    print(" -- ")
+    
+    print(calculate(4, 5, {a, b -> a * b}))
+    print(" -- ")
 }
 
 // Pay atention to the ":" sign after 'functionWhoSums'
