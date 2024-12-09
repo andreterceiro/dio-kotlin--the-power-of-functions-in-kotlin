@@ -347,6 +347,8 @@ You can construct lambda functions in several ways, see:
 
 ![lambda function variations](images/lambda-variations.png)
 
+In the test directories I will test lambda functions, but only some variations, ok?
+
 
 # Support materials
 
