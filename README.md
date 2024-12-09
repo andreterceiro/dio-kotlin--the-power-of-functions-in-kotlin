@@ -163,5 +163,6 @@ infix fun Int.times(str: String) = str.repeat(this)
 
 fun main() {
     print(2.times("Bye "))
+    print(2 times("HI! ")) // Also works without a dot!    
 }
 ```
