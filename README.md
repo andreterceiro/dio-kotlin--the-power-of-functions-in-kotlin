@@ -375,6 +375,13 @@ fun main() {
 Please pay attention to the details, like the double colon. You have to obbey the syntax.
 
 
+## Extension functions and types
+
+Specifically this item I have not tested, please see the example of the teacher:
+
+![extension functions](images/extension-functions.png)
+
+
 # Support materials
 
 Please see this 2 sections in the [repository of the course](https://github.com/digitalinnovationone/aprenda-kotlin-com-exemplos):
