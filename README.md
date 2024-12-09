@@ -271,3 +271,26 @@ fun calculate(a: Int, b:Int, functionWhoSums: (Int, Int) -> Int): Int {
 }
 ```
 
+We can also return a function, pay attention to the syntax:
+
+```kotlin
+package tests
+
+fun operation(): (Int) -> Int {
+    return ::square
+}
+
+fun square(num: Int): Int {
+    return num * num
+}
+
+fun main() {
+    print(operation()(2))
+    print(" -- ")
+
+    // or
+
+    var func = operation()
+    print(func(2))
+}
+```
