@@ -294,3 +294,20 @@ fun main() {
     print(func(2))
 }
 ```
+
+
+## Extension function generics
+
+As you can see in the next example, we create a function to print a value checking if is null for all types, generic:
+
+```kotlin
+package tests
+
+fun <T> T?.nullSafeToString() = this.toString() ?: "valor nulo"
+
+fun main() {
+    print(null.nullSafeToString())
+    print(" -- ")
+    print("Hi".nullSafeToString())
+}
+```
